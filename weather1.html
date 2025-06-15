@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Weather App</title>
+  <link rel="stylesheet" href="weather.css" />
+  <link href="https://pro.fontawesome.com/releases/v6.0.0-beta3/css/all.css" rel="stylesheet">
+  <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h2>Weather</h2>
+      <div class="weather-input">
+        <input type="text" id="city_input" placeholder="Enter City Name" />
+        <button id="searchBtn"><i class="fa-regular fa-search"></i> Search</button>
+        <button id="locationBtn"><i class="bx bx-target-lock"></i> Current Location</button>
+      </div>
+    </div>
+
+    <div class="weather-data">
+      <div class="weather-left">
+        <div class="card" id="currentWeatherCard">
+          <!-- Current weather gets inserted here -->
+        </div>
+
+        <div class="card">
+          <h2>5 Days Forecast</h2>
+          <div id="fiveDayForecast" class="day-forecast">
+            <!-- Forecast items get inserted here -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="weather1.js"></script>
+</body>
+</html>
